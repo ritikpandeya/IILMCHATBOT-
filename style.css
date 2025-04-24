@@ -1,0 +1,129 @@
+/* General Body Styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(120deg, #e0f7fa, #80deea);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    animation: backgroundShift 10s infinite alternate;
+  }
+  
+  .university-image img {
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  
+  h1 {
+    margin-bottom: 20px;
+    color: #004d40;
+    font-size: 2rem;
+    animation: bounceIn 1.5s;
+  }
+  
+  #chatbox {
+    width: 100%;
+    max-width: 550px;
+    height: 500px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+    padding: 15px;
+    overflow-y: auto;
+    animation: fadeInUp 1s ease-in-out;
+  }
+  
+  #userInput {
+    display: flex;
+    margin-top: 10px;
+    max-width: 550px;
+    width: 100%;
+  }
+  
+  #textInput {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  }
+  
+  #buttonInput {
+    padding: 10px 15px;
+    margin-left: 5px;
+    background-color: #00796b;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+  }
+  
+  .message {
+    margin: 5px 0;
+    padding: 10px 14px;
+    border-radius: 12px;
+    max-width: 80%;
+    animation: fadeIn 0.3s ease-in-out;
+  }
+  
+  .user {
+    background-color: #c8e6c9;
+    align-self: flex-end;
+    text-align: right;
+  }
+  
+  .bot {
+    background-color: #e0f2f1;
+    align-self: flex-start;
+    text-align: left;
+  }
+  
+  #faq-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 15px;
+    max-width: 550px;
+  }
+  
+  .faq-btn {
+    padding: 10px 16px;
+    background-color: #004d40;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .faq-btn:hover {
+    background-color: #00695c;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(40px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  @keyframes bounceIn {
+    0% { transform: scale(0.9); opacity: 0; }
+    60% { transform: scale(1.05); opacity: 1; }
+    100% { transform: scale(1); }
+  }
+  
+  @keyframes backgroundShift {
+    0% { background: linear-gradient(120deg, #e0f7fa, #80deea); }
+    100% { background: linear-gradient(120deg, #e1bee7, #b39ddb); }
+  }
+  
